@@ -306,7 +306,6 @@ function encode(data, dp) {
     //"DPT_Switch",
     //"DPT_Tempd",
     //"DPT_TimeOfDay"
-    //"DPT_Date"
     //"DPT_Scaling"
 
     if (type === 'DPT_Switch') {
@@ -378,6 +377,8 @@ function encode(data, dp) {
         } else if(data == 3 || data === 'Reduzierte Lüftung'){
             return [Buffer.from('03', 'hex'), 'Reduzierte Lüftung'];
         }
+    } else if (type === 'DPT_Date'){
+        return [enc.encodeDPT11(data), val];
     }
     if (name === 'Warmwassersolltemperatur') {
         val = parseInt(data);
