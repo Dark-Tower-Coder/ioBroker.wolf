@@ -17,6 +17,10 @@ Lese auf [deutsch](docs/de/README.md).
 -->
 
 ## Changelog
+### 1.3.6 (2022-02-06)
+* (Dark-Tower-Coder) senden von Daten für DPT_Date Datentypen implementiert
+* (Dark-Tower-Coder) return Wert für DPT_Switch von '0ff' auf 'Off' korrigiert
+
 ### 1.3.5 (2022-01-16)
 * (Dark-Tower-Coder) Fixed bug: Can't parse DP : 149 - length, 21 (Issue #58)
 * (Dark-Tower-Coder) Mode for CWL Excellent save/send (DP 149)
